@@ -1,24 +1,45 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["config:base", "helpers:pinGitHubActionDigests", "group:allNonMajor", ":semanticCommits"],
-    "labels": ["dependencies"],
-    "schedule": ["before 6am"],
+    "extends": [
+        "config:base",
+        "group:allNonMajor",
+        "helpers:pinGitHubActionDigests",
+        ":semanticCommits"
+    ],
+    "labels": [
+        "dependencies"
+    ],
+    "schedule": [
+        "before 6am"
+    ],
     "timezone": "Asia/Jakarta",
     "docker": {
         "enabled": true,
         "rangeStrategy": "bump"
     },
     "npm": {
-        "rangeStrategy": "bump",
-        "packageRules": [{
-                "matchUpdateTypes": ["minor", "patch"],
+        "packageRules": [
+            {
+                "matchUpdateTypes": [
+                    "minor",
+                    "patch"
+                ],
                 "matchCurrentVersion": "!/^0/",
                 "automerge": true
             },
             {
-                "matchDepTypes": ["engines"],
+                "matchDepTypes": [
+                    "engines"
+                ],
                 "enabled": false
+            },
+            {
+                "matchPackagePatterns": [
+                    "@clytage-pkg"
+                ],
+                "groupName": "Clytage Dependencies"
             }
-        ]
+        ],
+        "rangeStrategy": "bump"
     }
 }
