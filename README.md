@@ -1,3 +1,3 @@
-# template
+# renovate-config
 
-A template to generate well-configured project base for Clytage.
+Extendable Renovate configuration for Clytage repositories.
