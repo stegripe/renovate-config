@@ -48,5 +48,7 @@
             }
         ],
         "rangeStrategy": "bump"
-    }
+    },
+    "separateMultipleMajor": true,
+    "separateMajorMinor": true
 }
