@@ -13,13 +13,11 @@
         "before 6am"
     ],
     "timezone": "Asia/Jakarta",
-    "docker": {
-        "enabled": true,
-        "rangeStrategy": "bump"
-    },
+    "ignorePaths": [
+        ".devcontainer/**"
+    ],
     "npm": {
-        "packageRules": [
-            {
+        "packageRules": [{
                 "matchUpdateTypes": [
                     "minor",
                     "patch"
@@ -32,6 +30,15 @@
                     "engines"
                 ],
                 "enabled": false
+            },
+            {
+                "matchPackagePatterns": [
+                    "@clytage-pkg/eslint-config",
+                    "@typescript-eslint",
+                    "eslint",
+                    "typescript"
+                ],
+                "groupName": "ESLint Dependencies"
             },
             {
                 "matchPackagePatterns": [
