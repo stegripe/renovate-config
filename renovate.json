@@ -33,7 +33,7 @@
             },
             {
                 "matchPackagePatterns": [
-                    "@clytage-pkg/eslint-config",
+                    "@clytage/eslint-config",
                     "@typescript-eslint",
                     "eslint",
                     "typescript"
@@ -42,7 +42,7 @@
             },
             {
                 "matchPackagePatterns": [
-                    "@clytage-pkg"
+                    "@clytage"
                 ],
                 "groupName": "Clytage Dependencies"
             }
