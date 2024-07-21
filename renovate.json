@@ -33,7 +33,7 @@
             },
             {
                 "matchPackagePatterns": [
-                    "@clytage/eslint-config",
+                    "@stegripe/eslint-config",
                     "@typescript-eslint",
                     "eslint",
                     "typescript"
@@ -42,9 +42,9 @@
             },
             {
                 "matchPackagePatterns": [
-                    "@clytage"
+                    "@stegripe"
                 ],
-                "groupName": "Clytage Dependencies"
+                "groupName": "Stegripe Dependencies"
             }
         ],
         "rangeStrategy": "bump"
