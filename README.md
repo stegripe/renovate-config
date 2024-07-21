@@ -1,3 +1,3 @@
-# renovate-config
+# @stegripe/renovate-config
 
 Extendable Renovate configuration for Stegripe repositories.
